@@ -1,0 +1,35 @@
+.social-icons {
+  display: flex;
+  justify-content: space-between; 
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+.btn-midia {
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; 
+  height: 40px; 
+  margin: 0 auto;
+  padding: 0; 
+  border-radius: 50%; 
+  text-align: center;
+}
+
+a.btn-midia {
+  text-decoration: none;
+}
+
+.btn-midia > span, .btn-midia > i {
+  color: #000;
+}
+
+.btn-midia:hover {
+  background-color: #000;
+}
+
+.btn-midia:hover > span, .btn-midia:hover > i {
+  color: #fff;
+}
