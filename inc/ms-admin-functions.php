@@ -217,7 +217,7 @@ function ms_checkbox_field_ig_html() {
     $show_ig = get_option('ms_show_ig');
     $text = get_option('ms_url_ig');
 
-    ms_create_field_text('container_my_ig', $show_ig, 'ms_url_ig', $text);
+    ms_create_field_text('container_my_ig', $show_ig, 'ms_url_ig', 'Digite a URL: ', $text);
 
  }
 
@@ -237,7 +237,7 @@ function ms_checkbox_field_in_html() {
     $show_in = get_option('ms_show_in');
     $text = get_option('ms_url_in');
 
-    ms_create_field_text('container_my_in', $show_in, 'ms_url_in', $text);
+    ms_create_field_text('container_my_in', $show_in, 'ms_url_in', 'Digite a URL: ', $text);
     
  }
 
@@ -256,7 +256,7 @@ function ms_checkbox_field_gh_html() {
     $show_gh = get_option('ms_show_gh');
     $text = get_option('ms_url_gh');
 
-    ms_create_field_text('container_my_gh', $show_gh, 'ms_url_gh', $text);
+    ms_create_field_text('container_my_gh', $show_gh, 'ms_url_gh', 'Digite a URL: ', $text);
  }
 
 //  Input checkbox Show GitHub
@@ -274,7 +274,7 @@ function ms_checkbox_field_wa_html() {
     $show_wa = get_option('ms_show_wa');
     $text = get_option('ms_url_wa');
 
-    ms_create_field_text('container_my_wa', $show_wa, 'ms_url_wa', $text);
+    ms_create_field_text('container_my_wa', $show_wa, 'ms_url_wa', 'Digite o número com DDD: ', $text);
  }
 
 //  Funções para criação do campos checkbox e text de cada opção
@@ -283,10 +283,10 @@ function ms_checkbox_field_wa_html() {
    printf("<label><input type='checkbox' id='$id_name' name='$id_name' $checked /> Habilitar </label>");
  }
 
- function ms_create_field_text($id_div, $show, $id_name, $content_text) {
+ function ms_create_field_text($id_div, $show, $id_name, $label, $content_text) {
 
   echo '<div id="'. $id_div .'" style="'. ($show == 'on' ? '' : 'display: none;') .'">';
-    printf('<label>Digite a URL: <input type="text" id="'. $id_name .'" name="'. $id_name .'" value="%s" /></label>', esc_attr( $content_text ));
+    printf('<label>'. $label .'<input type="text" id="'. $id_name .'" name="'. $id_name .'" value="%s" /></label>', esc_attr( $content_text ));
   echo '</div>';
 
  }

@@ -3,7 +3,7 @@
  * Plugin Name: Mídias Socias
  * Plugin URI: https://www.minhasmidias.com.br
  * Description: Um plugin para compartilhar suas Mídias Sociais
- * Version: 1.0
+ * Version: 1.1
  * Author: Geraldo Alves
  * Author URI: https://www.geraldoalves.dev 
  */
